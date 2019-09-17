@@ -7,6 +7,14 @@ spring:
     view:
       prefix:     /jsp/
       suffix:     .jsp
+  datasource :
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://gobella.crabdance.com:3306/mydb
+    username: gobella
+    password: Tftfat024!
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
 server:
   tomcat:
     uri-encoding: UTF-8
